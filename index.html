@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<a href=""></a>
+
+	<header>
+		<div class="navdar">
+			<ul class="menu">
+				<li class="menu__item"><a href="#">Летние забавы</a></li>
+				<li class="menu__item"><a href="#">Игры</a></li>
+				<li class="menu__item"><a href="#">Прогулки</a></li>
+				<li class="menu__item"><a href="#">Путешесвия</a></li>
+				<li class="menu__item"><a href="#">Праздники</a></li>
+			</ul>
+		</div>
+		<div class="offer">
+			<div class="offer-img">
+				<h1>веселое лето</h1>
+			</div>
+		</div>
+	</header>
+
+	<section class="info">
+		<div class="info-img">
+			<img src="img/1820.jpg" alt="">
+			<!-- <p class="info_text">Гулять</p> -->
+		</div>
+		<div class="info-img">
+			<img src="img/images.jpg" alt="">
+			<!-- <p class="info_text">Кататься</p> -->
+		</div>
+		<div class="info-img">
+			<img src="img/chemodans.jpg" alt="">
+			<p class="info_text">Путешествовать</p>
+		</div>
+		<div class="info-img">
+			<img src="img/risunok-panda-gamak-otdyh.jpg" alt="">
+			<p class="info_text">Отдыхать</p>
+		</div>
+	</section>
+	
+	<section class="video">
+		<div class="monitor">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/d6va-t08FgA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</section>
+
+	<section class="table">
+		<table border="1" cellspacing="0" cellpadding="0">
+			<tr>
+				<th>Месяц</th>
+				<th>Температа (мин)</th>
+				<th>Температа (макс)</th>
+				<th>Осадки</th>
+			</tr>
+			<tr>
+				<td>Июнь</td>
+				<td>18°</td>
+				<td>27°</td>
+				<td>79.4 мм</td>
+			</tr>
+			<tr>
+				<td>Июль</td>
+				<td>22°</td>
+				<td>35°</td>
+				<td>102.9 мм</td>
+			</tr>
+			<tr>
+				<td>Август</td>
+				<td>21°</td>
+				<td>39°</td>
+				<td>64.2</td>
+			</tr>
+		</table>
+		
+	</section>
+
+	<footer>
+		<div class="footer__icons">
+			<a href="https://vk.com/id196560244" class="footer__link">
+				<img src="img/vk.png" alt="">
+			</a>
+			<a href="https://www.instagram.com/coddy_nvrsk/?hl=ru" class="footer__link">
+				<img src="img/instagram.png" alt="">
+			</a>
+			<a href="https://www.youtube.com/" class="footer__link">
+				<img src="img/youtube.png" alt="">
+			</a>
+		</div>
+		<div class="footer__author">
+			<h3 class="footer__text">Школа программирования для детей и подростков SODI</h3>
+		</div>
+	</footer>
+
+
+
+
+	<style>
+		body{
+			margin: 0;
+		}
+
+		h1{
+			color: #000;
+			text-transform: uppercase;
+			font-family: 'Caveat', cursive;
+			text-align: right;
+			font-size: 72px;
+			margin: 0;
+			padding-top: 300px;
+			padding-right: 100px;
+		}
+		.navdar{
+			background: rgb(252, 188, 76);
+			text-align: center;
+		}
+		.menu{
+			padding: 0;
+			margin: 0;
+		}
+		.menu__item{
+			display: inline-block;
+			padding: 10px 15px;
+		}
+		.menu__item a{
+			text-decoration: none;
+			color: #000;
+			text-transform: uppercase;
+		}
+		.offer{
+			height: 600px;
+			background: linear-gradient(rgba(208, 0, 255, .7), rgba(255, 162, 0, 1)); 
+		}
+		.offer-img{
+			height: 600px;
+			background: url('img/fon.png') left;
+			background-size: 90%;
+		}
+		.info{
+			padding: 50px;
+			height: 300px;
+		}
+		.info-img{
+			position: relative;
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			overflow: hidden;
+			float: left;
+			margin: 25px 50px;
+		}
+		.info-img img{
+			height: 100%;
+			width: auto;
+			margin-left: -9px;
+		}
+		.info_text{
+			position: absolute;
+			top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -100%);
+		    color: #fff;
+		    font-size: 22px;
+		    font-weight: 600;
+		    display: none;
+		}
+		.info-img:hover{
+			background: #000;
+		}
+		.info-img:hover .info_text{
+			display: block;
+		}
+		.info img:hover{
+			opacity: 0.3;
+		}
+		.monitor{
+			width: 557px;
+			height: 400px;
+			margin: 50px auto;
+			background: url('img/laptop.png');
+			background-size: 100%;
+			padding: 25px ;
+		}
+
+		table{
+			width: 1000px;
+			height: 200px;
+			margin: 30px auto;
+			text-align: center;
+			font-size: 20px;
+		}
+		th{
+			background: #cb70ff;
+		}
+		td{
+			background: #f2dbff;
+		}
+
+		footer{
+			background: #2a2928;
+		}
+		.footer__icons{
+			width: 190px;
+			margin: 0 auto;
+		}
+		.footer__link{
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			background: #fff;
+			border-radius: 50%;
+			margin: 30px 10px;
+		}
+		.footer__link img{
+			width: 25px;
+			margin: 8px;
+		}
+		.footer__author{
+			background: #484848;
+			padding: 10px;
+			border-top: 1px solid #fff;
+		}
+		.footer__text{
+			color: #fff;
+			text-align: center;
+			font-weight: 200;
+			margin: 0;
+		}
+	</style>
+</body>
+</html>
